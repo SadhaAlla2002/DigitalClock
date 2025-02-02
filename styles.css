@@ -1,0 +1,65 @@
+/* Reset margins and paddings for all elements */
+* {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling with a modern deep purple to bright pink gradient background */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #4A148C, #E91E63); /* Deep purple to bright pink gradient */
+            font-family: 'Orbitron', sans-serif;
+            margin: 0;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        /* Container styling with subtle dark grey background and glow */
+        #container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 500px;
+            height: 500px;
+            background-color: rgba(50, 50, 50, 0.8); /* Dark grey with some transparency */
+            border-radius: 20px;
+            box-shadow: 0 4px 30px rgba(0, 255, 255, 0.4), 0 -4px 30px rgba(255, 0, 255, 0.4); /* Soft neon glow */
+            text-align: center;
+            position: relative;
+            padding: 30px;
+            transition: box-shadow 0.5s ease, background-color 0.5s ease;
+        }
+
+        #container:hover {
+            box-shadow: 0 4px 40px rgba(0, 255, 255, 0.7), 0 -4px 40px rgba(255, 0, 255, 0.7);
+            background-color: rgba(30, 30, 30, 0.8); /* Slightly darker on hover */
+        }
+
+        /* Time styling */
+        #time {
+            font-size: 80px;
+            color: #00ff00; /* Green for time */
+            text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6); /* Soft shadow for readability */
+            margin: 20px;
+        }
+
+        /* Seconds styling (centered and in red) */
+        #sec {
+            font-size: 150px;
+            color: #ff0000; /* Red for seconds */
+            text-shadow: 6px 6px 12px rgba(0, 0, 0, 0.5);
+            margin-top: -40px; /* Pull seconds closer to the time */
+        }
+
+        /* Date and Day styling */
+        #date, #day {
+            font-size: 35px;
+            color: #ffff00; /* Yellow for date */
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+            margin-top: 10px;
+        }
